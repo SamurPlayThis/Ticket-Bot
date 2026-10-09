@@ -2,7 +2,7 @@ import { defineConfig } from "@/config/index.js";
 
 export default defineConfig("0.0.1", {
 	clientId: "1557988407152746566",
-	guildId: "123456789012345678",
+	guildId: "",
 	lang: "en",
 	uuidType: "uuid",
 	minimalTracking: false,
