@@ -1,17 +1,16 @@
 import { defineConfig } from "@/config/index.js";
 
 export default defineConfig("0.0.1", {
-	// ID вашего бота (уже подставил ваш реальный ID со скриншота)
 	clientId: "1557988407152746566",
-	
-	// ID вашего Discord-сервера (замените на свой ID, если умеете его копировать)
 	guildId: "123456789012345678",
-	
-	// Язык бота ("en" - английский, "fr" - французский)
 	lang: "en",
 	uuidType: "uuid",
 	minimalTracking: false,
 	showWSLog: false,
+	
+	// Обязательное поле для новой версии бота
+	panels: {},
+
 	logs: {
 		enabled: false,
 		channelId: "171717171717171717",
@@ -36,7 +35,6 @@ export default defineConfig("0.0.1", {
 	},
 
 	tickets: {
-		// Шаблон названия каналов. {ticketNumber} сделает нумерацию 001, 002 и т.д.
 		channelNameTemplate: "{ticketNumber}-ticket-{username}",
 		maxOpenPerUser: 1,
 		staffRoleIds: ["111111111111111111"],
